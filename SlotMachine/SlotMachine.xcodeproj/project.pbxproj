@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AED11D12215E917A00183249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED11D11215E917A00183249 /* AppDelegate.swift */; };
-		AED11D14215E917A00183249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED11D13215E917A00183249 /* ViewController.swift */; };
-		AED11D17215E917A00183249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED11D15215E917A00183249 /* Main.storyboard */; };
-		AED11D19215E917B00183249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED11D18215E917B00183249 /* Assets.xcassets */; };
-		AED11D1C215E917B00183249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED11D1A215E917B00183249 /* LaunchScreen.storyboard */; };
+		AEF6D6C72167E0080028942C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D6C62167E0080028942C /* AppDelegate.swift */; };
+		AEF6D6C92167E0080028942C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D6C82167E0080028942C /* ViewController.swift */; };
+		AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CA2167E0080028942C /* Main.storyboard */; };
+		AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CD2167E00A0028942C /* Assets.xcassets */; };
+		AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AED11D0E215E917A00183249 /* slot machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "slot machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AED11D11215E917A00183249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AED11D13215E917A00183249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AED11D16215E917A00183249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AED11D18215E917B00183249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AED11D1B215E917B00183249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AED11D1D215E917B00183249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF6D6C32167E0080028942C /* SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF6D6C62167E0080028942C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEF6D6C82167E0080028942C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEF6D6CB2167E0080028942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEF6D6CD2167E00A0028942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEF6D6D02167E00A0028942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEF6D6D22167E00A0028942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AED11D0B215E917A00183249 /* Frameworks */ = {
+		AEF6D6C02167E0080028942C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AED11D05215E917A00183249 = {
+		AEF6D6BA2167E0080028942C = {
 			isa = PBXGroup;
 			children = (
-				AED11D10215E917A00183249 /* slot machine */,
-				AED11D0F215E917A00183249 /* Products */,
+				AEF6D6C52167E0080028942C /* SlotMachine */,
+				AEF6D6C42167E0080028942C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AED11D0F215E917A00183249 /* Products */ = {
+		AEF6D6C42167E0080028942C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AED11D0E215E917A00183249 /* slot machine.app */,
+				AEF6D6C32167E0080028942C /* SlotMachine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AED11D10215E917A00183249 /* slot machine */ = {
+		AEF6D6C52167E0080028942C /* SlotMachine */ = {
 			isa = PBXGroup;
 			children = (
-				AED11D11215E917A00183249 /* AppDelegate.swift */,
-				AED11D13215E917A00183249 /* ViewController.swift */,
-				AED11D15215E917A00183249 /* Main.storyboard */,
-				AED11D1A215E917B00183249 /* LaunchScreen.storyboard */,
-				AED11D18215E917B00183249 /* Assets.xcassets */,
-				AED11D1D215E917B00183249 /* Info.plist */,
+				AEF6D6C62167E0080028942C /* AppDelegate.swift */,
+				AEF6D6C82167E0080028942C /* ViewController.swift */,
+				AEF6D6CA2167E0080028942C /* Main.storyboard */,
+				AEF6D6CD2167E00A0028942C /* Assets.xcassets */,
+				AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */,
+				AEF6D6D22167E00A0028942C /* Info.plist */,
 			);
-			path = "slot machine";
+			path = SlotMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AED11D0D215E917A00183249 /* slot machine */ = {
+		AEF6D6C22167E0080028942C /* SlotMachine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AED11D20215E917B00183249 /* Build configuration list for PBXNativeTarget "slot machine" */;
+			buildConfigurationList = AEF6D6D52167E00A0028942C /* Build configuration list for PBXNativeTarget "SlotMachine" */;
 			buildPhases = (
-				AED11D0A215E917A00183249 /* Sources */,
-				AED11D0B215E917A00183249 /* Frameworks */,
-				AED11D0C215E917A00183249 /* Resources */,
+				AEF6D6BF2167E0080028942C /* Sources */,
+				AEF6D6C02167E0080028942C /* Frameworks */,
+				AEF6D6C12167E0080028942C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "slot machine";
-			productName = "slot machine";
-			productReference = AED11D0E215E917A00183249 /* slot machine.app */;
+			name = SlotMachine;
+			productName = SlotMachine;
+			productReference = AEF6D6C32167E0080028942C /* SlotMachine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AED11D06215E917A00183249 /* Project object */ = {
+		AEF6D6BB2167E0080028942C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Jovance Ilievski";
 				TargetAttributes = {
-					AED11D0D215E917A00183249 = {
+					AEF6D6C22167E0080028942C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = AED11D09215E917A00183249 /* Build configuration list for PBXProject "slot machine" */;
+			buildConfigurationList = AEF6D6BE2167E0080028942C /* Build configuration list for PBXProject "SlotMachine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = AED11D05215E917A00183249;
-			productRefGroup = AED11D0F215E917A00183249 /* Products */;
+			mainGroup = AEF6D6BA2167E0080028942C;
+			productRefGroup = AEF6D6C42167E0080028942C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AED11D0D215E917A00183249 /* slot machine */,
+				AEF6D6C22167E0080028942C /* SlotMachine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AED11D0C215E917A00183249 /* Resources */ = {
+		AEF6D6C12167E0080028942C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED11D1C215E917B00183249 /* LaunchScreen.storyboard in Resources */,
-				AED11D19215E917B00183249 /* Assets.xcassets in Resources */,
-				AED11D17215E917A00183249 /* Main.storyboard in Resources */,
+				AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */,
+				AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */,
+				AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AED11D0A215E917A00183249 /* Sources */ = {
+		AEF6D6BF2167E0080028942C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED11D14215E917A00183249 /* ViewController.swift in Sources */,
-				AED11D12215E917A00183249 /* AppDelegate.swift in Sources */,
+				AEF6D6C92167E0080028942C /* ViewController.swift in Sources */,
+				AEF6D6C72167E0080028942C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AED11D15215E917A00183249 /* Main.storyboard */ = {
+		AEF6D6CA2167E0080028942C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AED11D16215E917A00183249 /* Base */,
+				AEF6D6CB2167E0080028942C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AED11D1A215E917B00183249 /* LaunchScreen.storyboard */ = {
+		AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AED11D1B215E917B00183249 /* Base */,
+				AEF6D6D02167E00A0028942C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AED11D1E215E917B00183249 /* Debug */ = {
+		AEF6D6D32167E00A0028942C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		AED11D1F215E917B00183249 /* Release */ = {
+		AEF6D6D42167E00A0028942C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,34 +278,34 @@
 			};
 			name = Release;
 		};
-		AED11D21215E917B00183249 /* Debug */ = {
+		AEF6D6D62167E00A0028942C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "slot machine/Info.plist";
+				INFOPLIST_FILE = SlotMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cw.mk.slot-machine";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.cw.SlotMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AED11D22215E917B00183249 /* Release */ = {
+		AEF6D6D72167E00A0028942C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "slot machine/Info.plist";
+				INFOPLIST_FILE = SlotMachine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cw.mk.slot-machine";
+				PRODUCT_BUNDLE_IDENTIFIER = mk.cw.SlotMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AED11D09215E917A00183249 /* Build configuration list for PBXProject "slot machine" */ = {
+		AEF6D6BE2167E0080028942C /* Build configuration list for PBXProject "SlotMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AED11D1E215E917B00183249 /* Debug */,
-				AED11D1F215E917B00183249 /* Release */,
+				AEF6D6D32167E00A0028942C /* Debug */,
+				AEF6D6D42167E00A0028942C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AED11D20215E917B00183249 /* Build configuration list for PBXNativeTarget "slot machine" */ = {
+		AEF6D6D52167E00A0028942C /* Build configuration list for PBXNativeTarget "SlotMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AED11D21215E917B00183249 /* Debug */,
-				AED11D22215E917B00183249 /* Release */,
+				AEF6D6D62167E00A0028942C /* Debug */,
+				AEF6D6D72167E00A0028942C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AED11D06215E917A00183249 /* Project object */;
+	rootObject = AEF6D6BB2167E0080028942C /* Project object */;
 }
