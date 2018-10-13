@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "cherry-clipart-slot-machine-6.png",
+      "filename" : "Grapes-512.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Grapes-513.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Grapes-514.png",
       "scale" : "3x"
     }
   ],

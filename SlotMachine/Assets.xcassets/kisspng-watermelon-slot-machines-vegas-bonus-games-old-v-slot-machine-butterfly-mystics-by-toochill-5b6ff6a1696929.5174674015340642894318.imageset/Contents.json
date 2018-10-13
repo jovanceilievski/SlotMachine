@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-watermelon-slot-machines-vegas-bonus-games-old-v-slot-machine-butterfly-mystics-by-toochill-5b6ff6a1696929.5174674015340642894318.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-watermelon-slot-machines-vegas-bonus-games-old-v-slot-machine-butterfly-mystics-by-toochill-5b6ff6a1696929.5174674015340642894318-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-watermelon-slot-machines-vegas-bonus-games-old-v-slot-machine-butterfly-mystics-by-toochill-5b6ff6a1696929.5174674015340642894318-2.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
