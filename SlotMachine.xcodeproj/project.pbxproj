@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB625172174ED71002DBE5B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB625162174ED71002DBE5B /* SecondViewController.swift */; };
 		AEF6D6C72167E0080028942C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D6C62167E0080028942C /* AppDelegate.swift */; };
 		AEF6D6C92167E0080028942C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D6C82167E0080028942C /* ViewController.swift */; };
 		AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CA2167E0080028942C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB625162174ED71002DBE5B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AEF6D6C32167E0080028942C /* SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6D6C62167E0080028942C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF6D6C82167E0080028942C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				AEF6D6CD2167E00A0028942C /* Assets.xcassets */,
 				AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */,
 				AEF6D6D22167E00A0028942C /* Info.plist */,
+				3EB625162174ED71002DBE5B /* SecondViewController.swift */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB625172174ED71002DBE5B /* SecondViewController.swift in Sources */,
 				AEF6D6C92167E0080028942C /* ViewController.swift in Sources */,
 				AEF6D6C72167E0080028942C /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mk.cw.SlotMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SlotMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mk.cw.SlotMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
