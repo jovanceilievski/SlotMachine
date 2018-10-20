@@ -58,11 +58,11 @@
 			children = (
 				AEF6D6C62167E0080028942C /* AppDelegate.swift */,
 				AEF6D6C82167E0080028942C /* ViewController.swift */,
+				3EB625162174ED71002DBE5B /* SecondViewController.swift */,
 				AEF6D6CA2167E0080028942C /* Main.storyboard */,
 				AEF6D6CD2167E00A0028942C /* Assets.xcassets */,
 				AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */,
 				AEF6D6D22167E00A0028942C /* Info.plist */,
-				3EB625162174ED71002DBE5B /* SecondViewController.swift */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
