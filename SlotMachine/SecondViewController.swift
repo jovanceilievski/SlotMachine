@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class SecondViewController: UIViewController {
     
     @IBOutlet var image1 : UIImageView!
@@ -34,10 +34,16 @@ class SecondViewController: UIViewController {
     var selectedIndex : Int!
     var win : Int!
     var totalCoins : Int = 5000
+    var musicEffect : AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
+        do {
+            try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
+        }
+        catch {
+            print (error)
+        }          // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +74,7 @@ class SecondViewController: UIViewController {
         if totalCoins < 100 {
             ////
         }
+        musicEffect.play()
         createAnimationImage(imageView: image1)
         createAnimationImage(imageView: image2)
         createAnimationImage(imageView: image3)
