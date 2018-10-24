@@ -13,7 +13,6 @@
 		AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CA2167E0080028942C /* Main.storyboard */; };
 		AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CD2167E00A0028942C /* Assets.xcassets */; };
 		AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */; };
-		D9AA1FB4217D1FCB00DD7FD3 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9AA1FB3217D1FCB00DD7FD3 /* spin.mp3 */; };
 		D9AA1FB7217D200000DD7FD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		AEF6D6CD2167E00A0028942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF6D6D02167E00A0028942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF6D6D22167E00A0028942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9AA1FB3217D1FCB00DD7FD3 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spin.mp3; path = ../../../Downloads/spin.mp3; sourceTree = "<group>"; };
 		D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,7 +43,6 @@
 		AEF6D6BA2167E0080028942C = {
 			isa = PBXGroup;
 			children = (
-				D9AA1FB3217D1FCB00DD7FD3 /* spin.mp3 */,
 				AEF6D6C52167E0080028942C /* SlotMachine */,
 				AEF6D6C42167E0080028942C /* Products */,
 				D9AA1FB5217D1FFF00DD7FD3 /* Frameworks */,
@@ -140,7 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9AA1FB4217D1FCB00DD7FD3 /* spin.mp3 in Resources */,
 				AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */,
 				AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */,
 				AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */,

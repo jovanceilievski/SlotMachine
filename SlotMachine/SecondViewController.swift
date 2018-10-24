@@ -37,13 +37,13 @@ class SecondViewController: UIViewController {
     var musicEffect : AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
-        do {
-            try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
-        }
-        catch {
-            print (error)
-        }          // Do any additional setup after loading the view.
+//        let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
+//        do {
+//            try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
+//        }
+//        catch {
+//            print (error)
+//        }          // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,9 +61,8 @@ class SecondViewController: UIViewController {
         }
         imageView.animationImages = animatedArray
         imageView.animationDuration = 2
-        imageView.animationRepeatCount = 2
+        imageView.animationRepeatCount = 1
         imageView.startAnimating()
-        
         let randomIndex = Int (arc4random_uniform(UInt32(imageArray.count)))
         imageView.image = imageArray[randomIndex]
     }
@@ -74,7 +73,8 @@ class SecondViewController: UIViewController {
         if totalCoins < 100 {
             ////
         }
-        musicEffect.play()
+        winLabel.text = ""
+        //musicEffect.play()
         createAnimationImage(imageView: image1)
         createAnimationImage(imageView: image2)
         createAnimationImage(imageView: image3)
@@ -95,6 +95,7 @@ class SecondViewController: UIViewController {
             selectedIndex = valuesForBetting.selectedSegmentIndex
             betValue = Int (valuesForBetting.titleForSegment(at: selectedIndex)!)
             totalCoins =  totalCoins - betValue
+            coins.text = String (totalCoins)
             win = betValue * checkSameImagesInLine(imageView1: image6, imageView2: image7, imageView3: image8, imageView4: image9, imageView5: image10)
            
         }
@@ -103,6 +104,7 @@ class SecondViewController: UIViewController {
             selectedIndex = valuesForBetting.selectedSegmentIndex
             betValue = Int (valuesForBetting.titleForSegment(at: selectedIndex)!)
             totalCoins =  totalCoins - betValue
+            coins.text = String (totalCoins)
             win = checkSameImagesInLine(imageView1: image6, imageView2: image7, imageView3: image8, imageView4: image9, imageView5: image10)
             win = win + checkSameImagesInLine(imageView1: image1, imageView2: image2, imageView3: image3, imageView4: image4, imageView5: image5)
             win = win + checkSameImagesInLine(imageView1: image11, imageView2: image12, imageView3: image13, imageView4: image14, imageView5: image15)
@@ -114,6 +116,7 @@ class SecondViewController: UIViewController {
             selectedIndex = valuesForBetting.selectedSegmentIndex
             betValue = Int (valuesForBetting.titleForSegment(at: selectedIndex)!)
             totalCoins =  totalCoins - betValue
+            coins.text = String (totalCoins)
             win = checkSameImagesInLine(imageView1: image6, imageView2: image7, imageView3: image8, imageView4: image9, imageView5: image10)
             win = win + checkSameImagesInLine(imageView1: image1, imageView2: image2, imageView3: image3, imageView4: image4, imageView5: image5)
             win = win + checkSameImagesInLine(imageView1: image11, imageView2: image12, imageView3: image13, imageView4: image14, imageView5: image15)
@@ -127,6 +130,7 @@ class SecondViewController: UIViewController {
             selectedIndex = valuesForBetting.selectedSegmentIndex
             betValue = Int (valuesForBetting.titleForSegment(at: selectedIndex)!)
             totalCoins =  totalCoins - betValue
+            coins.text = String (totalCoins)
             win = checkSameImagesInLine(imageView1: image6, imageView2: image7, imageView3: image8, imageView4: image9, imageView5: image10)
             win = win + checkSameImagesInLine(imageView1: image1, imageView2: image2, imageView3: image3, imageView4: image4, imageView5: image5)
             win = win + checkSameImagesInLine(imageView1: image11, imageView2: image12, imageView3: image13, imageView4: image14, imageView5: image15)
@@ -141,6 +145,7 @@ class SecondViewController: UIViewController {
             selectedIndex = valuesForBetting.selectedSegmentIndex
             betValue = Int (valuesForBetting.titleForSegment(at: selectedIndex)!)
             totalCoins =  totalCoins - betValue
+            coins.text = String (totalCoins)
             win = checkSameImagesInLine(imageView1: image6, imageView2: image7, imageView3: image8, imageView4: image9, imageView5: image10)
             win = win + checkSameImagesInLine(imageView1: image1, imageView2: image2, imageView3: image3, imageView4: image4, imageView5: image5)
             win = win + checkSameImagesInLine(imageView1: image11, imageView2: image12, imageView3: image13, imageView4: image14, imageView5: image15)
@@ -153,9 +158,11 @@ class SecondViewController: UIViewController {
             win = win * betValue
         
         }
-        winLabel.text = String (win)
-        totalCoins = totalCoins + win
-        coins.text = String (totalCoins)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.winLabel.text = String (self.win)
+            self.totalCoins = self.totalCoins + self.win
+            self.coins.text = String (self.totalCoins)
+        }
         
       
     }
@@ -249,7 +256,7 @@ class SecondViewController: UIViewController {
             if imageView2.image == imageArray [6] {
                 prize = 1000
             }
-        }else if ((imageView1.image == imageView2.image && imageView2.image == imageView3.image && imageView3.image != imageView4.image && imageView3.image != imageView5.image) || (imageView1.image != imageView2.image && imageView2.image == imageView3.image && imageView3.image == imageView4.image && imageView3.image != imageView5.image) || (imageView1.image != imageView2.image && imageView2.image != imageView3.image && imageView3.image == imageView4.image && imageView3.image == imageView5.image)){
+        }else if ((imageView1.image == imageView2.image && imageView2.image == imageView3.image && imageView3.image != imageView4.image && imageView3.image != imageView5.image) || (imageView1.image != imageView2.image && imageView2.image == imageView3.image && imageView3.image == imageView4.image && imageView3.image != imageView5.image) || (imageView1.image != imageView3.image && imageView2.image != imageView3.image && imageView3.image == imageView4.image && imageView3.image == imageView5.image)){
     
             if imageView3.image == imageArray [0] {
                 prize = 50
