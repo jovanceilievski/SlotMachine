@@ -14,6 +14,7 @@
 		AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CD2167E00A0028942C /* Assets.xcassets */; };
 		AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */; };
 		D9AA1FB7217D200000DD7FD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */; };
+		D9B061E2218112BE003F4919 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9B061E1218112BE003F4919 /* spin.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AEF6D6D02167E00A0028942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF6D6D22167E00A0028942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9B061E1218112BE003F4919 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				AEF6D6CA2167E0080028942C /* Main.storyboard */,
 				AEF6D6CD2167E00A0028942C /* Assets.xcassets */,
 				AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */,
+				D9B061E1218112BE003F4919 /* spin.mp3 */,
 				AEF6D6D22167E00A0028942C /* Info.plist */,
 				3EB625162174ED71002DBE5B /* SecondViewController.swift */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B061E2218112BE003F4919 /* spin.mp3 in Resources */,
 				AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */,
 				AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */,
 				AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */,
