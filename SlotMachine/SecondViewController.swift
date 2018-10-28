@@ -37,13 +37,13 @@ class SecondViewController: UIViewController {
     var musicEffect : AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
-//        do {
-//            try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
-//        }
-//        catch {
-//            print (error)
-//        }          // Do any additional setup after loading the view.
+        let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
+        do {
+            try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
+        }
+        catch {
+            print (error)
+        }          // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +74,7 @@ class SecondViewController: UIViewController {
             ////
         }
         winLabel.text = ""
-        //musicEffect.play()
+        musicEffect.play()
         createAnimationImage(imageView: image1)
         createAnimationImage(imageView: image2)
         createAnimationImage(imageView: image3)
