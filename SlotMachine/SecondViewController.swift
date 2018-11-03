@@ -28,7 +28,8 @@ class SecondViewController: UIViewController {
     @IBOutlet var coins : UILabel!
     @IBOutlet var valuesForBetting : UISegmentedControl!
     @IBOutlet var winLabel : UILabel!
-    @IBOutlet var labelForGoodLuck : UILabel!
+//
+    @IBOutlet weak var labelForGoodLuck: UILabel!
     var imageArray : [UIImage] = [#imageLiteral(resourceName: "Orange-512"), #imageLiteral(resourceName: "Grapes-512"), #imageLiteral(resourceName: "power-stars-f1"), #imageLiteral(resourceName: "Bananas-512"), #imageLiteral(resourceName: "Strawberry-512"),#imageLiteral(resourceName: "Cherry-512"), #imageLiteral(resourceName: "51dMi2iYAVL")]
     var betValue : Int!
     var selectedIndex : Int!
@@ -68,8 +69,9 @@ class SecondViewController: UIViewController {
     }
     
   
-    @IBAction func spin () {
-        totalCoins = Int(coins.text!)!
+   
+    @IBAction func spin() {
+     totalCoins = Int(coins.text!)!
         if totalCoins < 100 {
             ////
         }
