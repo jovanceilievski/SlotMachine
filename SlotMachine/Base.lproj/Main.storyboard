@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6An-v8-GaI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLOTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6An-v8-GaI">
                                 <rect key="frame" x="40.5" y="103" width="318.5" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="vYW-1k-cqo"/>
@@ -27,39 +27,39 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A43-4m-nNw">
-                                <rect key="frame" x="127" y="536" width="121" height="98"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.28621575342465749" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="qnx-5D-26E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" red="0.90543395280838013" green="0.045485444366931915" blue="0.078481964766979218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0F-Yu-HC6">
+                                <rect key="frame" x="88" y="424" width="84" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Letters"/>
+                                <state key="normal" image="Grapes-512"/>
                                 <connections>
-                                    <segue destination="BxT-xw-lXh" kind="show" id="aEz-YI-ysh"/>
+                                    <segue destination="BxT-xw-lXh" kind="show" identifier="Fruits" id="NoE-n1-zgt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cherry-clipart-slot-machine-6" translatesAutoresizingMaskIntoConstraints="NO" id="vMX-Mb-Hwn">
-                                <rect key="frame" x="40" y="204" width="219" height="139"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="168" id="Qv2-rZ-dxl"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-Tl-gik">
+                                <rect key="frame" x="195" y="323" width="90" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Animals"/>
+                                <state key="normal" image="Bananas-512"/>
+                                <connections>
+                                    <segue destination="BxT-xw-lXh" kind="show" identifier="Letters" id="KYy-44-8S7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIg-Hr-Ewb">
+                                <rect key="frame" x="74" y="217" width="98" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Fruits"/>
+                                <state key="normal" image="Bell-512"/>
+                                <connections>
+                                    <segue destination="BxT-xw-lXh" kind="show" identifier="Animals" id="zuJ-vs-mgG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6An-v8-GaI" secondAttribute="trailing" constant="16" id="6Py-6h-BeF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A43-4m-nNw" secondAttribute="bottom" constant="33" id="Dns-PB-MVF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vMX-Mb-Hwn" secondAttribute="trailing" constant="40" id="GNk-KH-m1q"/>
-                            <constraint firstItem="A43-4m-nNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="MPc-vL-yv0"/>
                             <constraint firstItem="6An-v8-GaI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="SCS-vQ-w9P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A43-4m-nNw" secondAttribute="trailing" constant="127" id="U91-9S-ynt"/>
-                            <constraint firstItem="A43-4m-nNw" firstAttribute="top" secondItem="vMX-Mb-Hwn" secondAttribute="bottom" constant="164" id="X2Q-v4-IMq"/>
-                            <constraint firstItem="vMX-Mb-Hwn" firstAttribute="top" secondItem="6An-v8-GaI" secondAttribute="bottom" constant="24" id="ex7-No-POU"/>
                             <constraint firstItem="6An-v8-GaI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40.5" id="gq9-98-2nk"/>
-                            <constraint firstItem="vMX-Mb-Hwn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="qED-TZ-3z0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -122,8 +122,8 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$Jackpot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o72-eK-Cvg">
-                                <rect key="frame" x="131.5" y="96" width="112" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIN:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o72-eK-Cvg">
+                                <rect key="frame" x="159" y="96" width="57" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="LTg-Xg-Vqk"/>
                                 </constraints>
@@ -554,18 +554,19 @@
                         <outlet property="image8" destination="re9-6m-dFh" id="G2H-6f-2Aq"/>
                         <outlet property="image9" destination="9Je-YG-bG6" id="3iq-pY-gh2"/>
                         <outlet property="labelForGoodLuck" destination="k9f-gH-uS1" id="m4b-tf-7sc"/>
+                        <outlet property="spinButton" destination="pyK-Ln-xai" id="awe-03-psN"/>
                         <outlet property="valuesForBetting" destination="fVH-rP-CaH" id="bS0-0H-fDb"/>
-                        <outlet property="winLabel" destination="4lU-Cs-sXc" id="cHv-vI-o1B"/>
+                        <outlet property="winLabel" destination="o72-eK-Cvg" id="9Pf-CN-G8K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghe-br-vsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951.20000000000005" y="89.505247376311857"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="Dtp-26-E8j">
             <objects>
-                <viewController id="7Jj-1F-NHR" sceneMemberID="viewController">
+                <viewController id="7Jj-1F-NHR" customClass="ThirdViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hew-Tc-sbk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -749,6 +750,15 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b8l-um-zSS"/>
                     </view>
+                    <connections>
+                        <outlet property="image1" destination="NzX-gC-Mcp" id="rfc-vU-55A"/>
+                        <outlet property="image2" destination="bm8-TK-Jld" id="aLD-H4-JGW"/>
+                        <outlet property="image3" destination="9mc-JT-AeB" id="A6Q-1t-h1h"/>
+                        <outlet property="image4" destination="Grf-fO-0AN" id="ah3-lM-UIV"/>
+                        <outlet property="image5" destination="K89-qV-zsX" id="IkF-6g-0o0"/>
+                        <outlet property="image6" destination="5mc-cI-KJ2" id="bLb-lf-IC9"/>
+                        <outlet property="image7" destination="ZtO-Mg-cdR" id="NrJ-9L-YD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipe-Az-J68" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,11 +784,14 @@
     <resources>
         <image name="51dMi2iYAVL" width="256" height="256"/>
         <image name="Bananas-512" width="256" height="256"/>
+        <image name="Bell-512" width="256" height="256"/>
         <image name="Cherry-512" width="256" height="256"/>
         <image name="Grapes-512" width="256" height="256"/>
         <image name="Orange-512" width="256" height="256"/>
         <image name="Strawberry-512" width="256" height="256"/>
-        <image name="cherry-clipart-slot-machine-6" width="256" height="256"/>
         <image name="power-stars-f1" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KYy-44-8S7"/>
+    </inferredMetricsTieBreakers>
 </document>

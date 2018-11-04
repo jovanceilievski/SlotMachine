@@ -13,8 +13,10 @@
 		AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CA2167E0080028942C /* Main.storyboard */; };
 		AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CD2167E00A0028942C /* Assets.xcassets */; };
 		AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */; };
+		D92A90EB218EF0A300D7AAD9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A90EA218EF0A300D7AAD9 /* ThirdViewController.swift */; };
+		D954CD7D218F99C400F2195B /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D954CD7C218F99C400F2195B /* spin.mp3 */; };
 		D9AA1FB7217D200000DD7FD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */; };
-		D9B061E2218112BE003F4919 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9B061E1218112BE003F4919 /* spin.mp3 */; };
+		D9BA54DA218E47810095F43C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA54D9218E47810095F43C /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		AEF6D6CD2167E00A0028942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF6D6D02167E00A0028942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF6D6D22167E00A0028942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92A90EA218EF0A300D7AAD9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D954CD7C218F99C400F2195B /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
 		D9AA1FB6217D200000DD7FD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		D9B061E1218112BE003F4919 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
+		D9BA54D9218E47810095F43C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,14 @@
 			children = (
 				AEF6D6C62167E0080028942C /* AppDelegate.swift */,
 				AEF6D6C82167E0080028942C /* ViewController.swift */,
+				D92A90EA218EF0A300D7AAD9 /* ThirdViewController.swift */,
 				3EB625162174ED71002DBE5B /* SecondViewController.swift */,
+				D9BA54D9218E47810095F43C /* Theme.swift */,
 				AEF6D6CA2167E0080028942C /* Main.storyboard */,
 				AEF6D6CD2167E00A0028942C /* Assets.xcassets */,
 				AEF6D6CF2167E00A0028942C /* LaunchScreen.storyboard */,
-				D9B061E1218112BE003F4919 /* spin.mp3 */,
 				AEF6D6D22167E00A0028942C /* Info.plist */,
+				D954CD7C218F99C400F2195B /* spin.mp3 */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -140,7 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B061E2218112BE003F4919 /* spin.mp3 in Resources */,
+				D954CD7D218F99C400F2195B /* spin.mp3 in Resources */,
 				AEF6D6D12167E00A0028942C /* LaunchScreen.storyboard in Resources */,
 				AEF6D6CE2167E00A0028942C /* Assets.xcassets in Resources */,
 				AEF6D6CC2167E0080028942C /* Main.storyboard in Resources */,
@@ -155,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB625172174ED71002DBE5B /* SecondViewController.swift in Sources */,
+				D9BA54DA218E47810095F43C /* Theme.swift in Sources */,
+				D92A90EB218EF0A300D7AAD9 /* ThirdViewController.swift in Sources */,
 				AEF6D6C92167E0080028942C /* ViewController.swift in Sources */,
 				AEF6D6C72167E0080028942C /* AppDelegate.swift in Sources */,
 			);

@@ -28,9 +28,10 @@ class SecondViewController: UIViewController {
     @IBOutlet var coins : UILabel!
     @IBOutlet var valuesForBetting : UISegmentedControl!
     @IBOutlet var winLabel : UILabel!
-//
     @IBOutlet weak var labelForGoodLuck: UILabel!
-    var imageArray : [UIImage] = [#imageLiteral(resourceName: "Orange-512"), #imageLiteral(resourceName: "Grapes-512"), #imageLiteral(resourceName: "power-stars-f1"), #imageLiteral(resourceName: "Bananas-512"), #imageLiteral(resourceName: "Strawberry-512"),#imageLiteral(resourceName: "Cherry-512"), #imageLiteral(resourceName: "51dMi2iYAVL")]
+    @IBOutlet var spinButton: UIButton!
+    var temaVoVtoriot:Theme?
+    var imageArray : [UIImage]!
     var betValue : Int!
     var selectedIndex : Int!
     var win : Int!
@@ -38,6 +39,23 @@ class SecondViewController: UIViewController {
     var musicEffect : AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageArray = (temaVoVtoriot?.immageArray)!
+        image1.image = imageArray [0]
+        image2.image = imageArray [0]
+        image3.image = imageArray [0]
+        image4.image = imageArray [1]
+        image5.image = imageArray [2]
+        image6.image = imageArray [0]
+        image7.image = imageArray [4]
+        image8.image = imageArray [5]
+        image9.image = imageArray [0]
+        image10.image = imageArray [6]
+        image11.image = imageArray [6]
+        image12.image = imageArray [0]
+        image13.image = imageArray [1]
+        image14.image = imageArray [4]
+        image15.image = imageArray [4]
+        self.view.backgroundColor = temaVoVtoriot?.backgroundColor
         let musicFile = Bundle.main.path(forResource: "spin", ofType: ".mp3")
         do {
             try musicEffect = AVAudioPlayer( contentsOf: URL (fileURLWithPath: musicFile!))
@@ -52,16 +70,21 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let destinacija: ThirdViewController = segue.destination as? ThirdViewController {
+                destinacija.temaVoTretiot = Theme(bojaNapozadina: UIColor.black, images : imageArray)
+            }
+    }
     func createAnimationImage (imageView: UIImageView)  {
         var animatedArray : [UIImage] = []
         var counter = 0
-        while counter < 20 {
+        while counter < 30 {
             let randomIndex = Int (arc4random_uniform(UInt32(imageArray.count)))
             animatedArray.append(imageArray[randomIndex])
             counter = counter + 1
         }
         imageView.animationImages = animatedArray
-        imageView.animationDuration = 2
+        imageView.animationDuration = 2.5
         imageView.animationRepeatCount = 1
         imageView.startAnimating()
         let randomIndex = Int (arc4random_uniform(UInt32(imageArray.count)))
@@ -75,7 +98,9 @@ class SecondViewController: UIViewController {
         if totalCoins < 100 {
             ////
         }
-        winLabel.text = ""
+        spinButton.isEnabled = false
+        winLabel.text = "WIN: "
+        labelForGoodLuck.text = "GOOD LUCK"
         musicEffect.play()
         createAnimationImage(imageView: image1)
         createAnimationImage(imageView: image2)
@@ -160,10 +185,18 @@ class SecondViewController: UIViewController {
             win = win * betValue
         
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.winLabel.text = String (self.win)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.winLabel.text = "WIN: " + String (self.win)
             self.totalCoins = self.totalCoins + self.win
             self.coins.text = String (self.totalCoins)
+            self.spinButton.isEnabled = true
+            if self.win > 0 {
+                self.labelForGoodLuck.text = "CONGRATULATION"
+            }
+            else {
+                self.labelForGoodLuck.text = "YOU LOST!"
+            }
+            
         }
         
       
