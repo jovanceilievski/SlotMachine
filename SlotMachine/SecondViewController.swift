@@ -30,6 +30,7 @@ class SecondViewController: UIViewController {
     @IBOutlet var winLabel : UILabel!
     @IBOutlet weak var labelForGoodLuck: UILabel!
     @IBOutlet var spinButton: UIButton!
+    let defaults = UserDefaults.standard
     var temaVoVtoriot:Theme?
     var imageArray : [UIImage]!
     var betValue : Int!
@@ -39,6 +40,13 @@ class SecondViewController: UIViewController {
     var musicEffect : AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let savedCoins = defaults.string(forKey: "SavedCoins"){
+            coins.text = savedCoins
+        }
+        else {
+            coins.text = "1000"
+        }
+        
         imageArray = (temaVoVtoriot?.immageArray)!
         image1.image = imageArray [0]
         image2.image = imageArray [0]
@@ -190,12 +198,14 @@ class SecondViewController: UIViewController {
             self.totalCoins = self.totalCoins + self.win
             self.coins.text = String (self.totalCoins)
             self.spinButton.isEnabled = true
+            self.defaults.set(self.totalCoins, forKey: "SavedCoins")
             if self.win > 0 {
                 self.labelForGoodLuck.text = "CONGRATULATION"
             }
             else {
                 self.labelForGoodLuck.text = "YOU LOST!"
             }
+            
             
         }
         
